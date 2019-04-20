@@ -1,0 +1,191 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    background-color: #03041C;
+}
+
+/***** LINEAR NAVIGATION *****/
+nav a:link,
+nav a:visited {
+    padding: 0 1rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav a:hover,
+nav a:active {
+    color: #888;
+}
+
+.navbar__logo__img {
+    height: 4rem;
+}
+
+/***** HAMBURGER NAVIGATION *****/
+.navbar__nav--hamburger {
+    display: none;
+}
+
+/*************************/
+/***** MEDIA QUERIES *****/
+/*************************/
+@media (max-width: 48em) {
+    .navbar {
+        height: 6rem;
+        background-color: transparent;
+    }
+
+    .navbar__logo__img {
+        height: 6rem;
+    }
+
+    /***** LINEAR NAVIGATION *****/
+    .navbar__nav--linear {
+        display: none;
+    }
+    
+    /***** HAMBURGER NAVIGATION *****/
+    .navbar__nav--hamburger {
+        display: block;
+    }
+
+    .hamburger__checkbox {
+        display: none;
+    }
+
+    .hamburger__button {
+        position: fixed;
+        top: 0;
+        right: 2rem;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: rgb(52, 95, 131);
+        box-shadow: 0 1rem 3rem rgba(#000, .1);
+        text-align: center;
+        cursor: pointer;
+        z-index: 2000;
+    }
+
+    .hamburger__background {
+        position: fixed;
+        top: 0;
+        right: 2rem;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-image: radial-gradient(rgb(52, 95, 131), #182C3C);
+        z-index: 2;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    .hamburger__nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 3;
+
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .hamburger__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+
+    .hamburger__item {
+        margin: 1rem;
+    }
+
+    .hamburger__link:link,
+    .hamburger__link:visited {
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-right: 1.5rem;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+        background-size: 220%;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 300;
+        color: #fff;
+        transition: all .4s;
+    }
+
+    .hamburger__link:hover,
+    .hamburger__link:active {
+        background-position: 100%;
+        color: #888;
+        transform: translateX(1rem);
+    }
+
+    /***** HAMBURGER NAVIGATION - FUNCTIONALITY *****/
+    .hamburger__checkbox:checked ~ .hamburger__background {
+        transform: scale(80);
+    }
+
+    .hamburger__checkbox:checked ~ .hamburger__nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    /***** HAMBURGER NAVIGATION - ICON *****/
+    .hamburger__icon {
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .hamburger__icon,
+    .hamburger__icon::before,
+    .hamburger__icon::after {
+        display: inline-block;
+        height: .2rem;
+        width: 3rem;
+        background-color: #fff;
+    }
+
+    .hamburger__icon::before,
+    .hamburger__icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    .hamburger__icon::before { top: -.8rem; }
+
+    .hamburger__icon::after { top: .8rem; }
+
+    .hamburger__button:hover .hamburger__icon::before {
+        top: -1rem;
+    }
+
+    .hamburger__button:hover .hamburger__icon::after {
+        top: 1rem;
+    }
+
+    .hamburger__checkbox:checked + .hamburger__button .hamburger__icon {
+        background-color: transparent;
+    }
+
+    .hamburger__checkbox:checked + .hamburger__button .hamburger__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    .hamburger__checkbox:checked + .hamburger__button .hamburger__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

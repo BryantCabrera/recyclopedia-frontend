@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Profile extends Component {
+class Landing extends Component {
     render(){
         return(
             <div>
-                <h1>this is the Profile Page</h1>
+                <h1>Landing</h1>
             </div>
         )
     }
 }
 
-export default Profile
+export default Landing
