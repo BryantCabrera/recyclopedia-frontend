@@ -84,7 +84,7 @@ class App extends Component {
                     imageData: url
                     };
 
-                    axios.post(`${API_URL}/image/uploadbase`, imageObj)
+                    axios.post(`${process.env.REACT_APP_API_URL}/image/uploadbase`, imageObj)
                     .then((data) => {
                         if (data.data.success) {
                         alert("Image has been successfully uploaded using firebase storage");
@@ -112,7 +112,11 @@ class App extends Component {
             imageData: files.base64.toString()
         };
 
-        axios.post(`${API_URL}/image/uploadbase`, imageObj)
+        axios.post(`${API_URL}/image/uploadbase`, imageObj, {
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
         .then((data) => {
             if (data.data.success) {
             alert("Image has been successfully uploaded using base64 format");
