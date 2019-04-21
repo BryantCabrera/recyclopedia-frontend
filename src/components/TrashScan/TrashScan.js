@@ -155,8 +155,6 @@ class App extends Component {
                     <img src={this.state.baseImage} alt="upload-image" className="process__image" />
                 </div>
                 </div>
-
-                <p className="main-credit">Created by <a href="#">Tarique Ejaz</a></p>
             </div>
         );
     }
