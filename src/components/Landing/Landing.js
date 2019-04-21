@@ -15,12 +15,12 @@ class Landing extends Component {
             <br></br><br></br>
                 environmental change with lasting global impact</p>
               <button className="landing__button-getstarted">
-                Get Started  
+                Get Started
             </button>
             </div>
-          {/* <img src={logo}></img> */}
-        </div>
-          
+            {/* <img src={logo}></img> */}
+          </div>
+
         </div>
         <div className="landing__features">
           <div className="landing__features--demo">
