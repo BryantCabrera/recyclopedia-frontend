@@ -132,7 +132,11 @@ class App extends Component {
         }
 
         console.log(JSON.stringify(imageScanData), ' this is imageScanData');
-        axios.post('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', JSON.stringify(imageScanData))
+        axios.post('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', JSON.stringify(imageScanData), {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
             .then(res => {
                 console.log(res, ' this is res from Nic & Alex');
             })
