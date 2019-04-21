@@ -112,7 +112,7 @@ class App extends Component {
             imageData: files.base64.toString()
         };
 
-        axios.post(`${API_URL}/image/uploadbase`, imageObj, {
+        axios.post(`${process.env.REACT_APP_API_URL}/image/uploadbase`, imageObj, {
                     headers: {
                         "Content-Type": "application/json"
                     }
