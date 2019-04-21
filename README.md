@@ -7,8 +7,9 @@ Recyclopedia is a full stack app built by
 3. Kevin Cuison - Front-End Software Engineer
 4. Michael Siller - Full Stack Software Engineer
 5. Alex Binaei -
-6. Teni Asewumi - 
-7. Colton Orr - 
+6. Teni Asewumi - Chief Research Officer
+7. Colton Orr - Chief Business Officer
+8. Patrick Carroll - React Native Engineer
 
 ## B. User Stories
 
