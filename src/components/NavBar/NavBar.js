@@ -7,7 +7,7 @@ class NavBar extends Component {
         return (
             <div className="navbar">
                 <div className="navbar__logo">
-                    <img className="navbar__logo__img" src="/imgs/two-cents__logos/tcns-logo.png" alt="TwoCents Logo" title="TwoCents Logo"></img>
+                    <img className="navbar__logo__img" src="/imgs/logo-text.png" alt="TwoCents Logo" title="TwoCents Logo"></img>
                 </div>
                 <nav className="navbar__nav--linear">
                     <a href="#about" title="About Page">About</a>

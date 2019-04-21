@@ -102,12 +102,12 @@ class App extends Component {
     getBaseFile(files) {
         // create a local readable base64 instance of an image
         this.setState({
-        baseImage: files.base64
+            baseImage: files.base64
         });
 
         let imageObj = {
-        imageName: "base-image-" + Date.now(),
-        imageData: files.base64.toString()
+            imageName: "base-image-" + Date.now(),
+            imageData: files.base64.toString()
         };
 
         axios.post(`${API_URL}/image/uploadbase`, imageObj)

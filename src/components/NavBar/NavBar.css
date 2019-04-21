@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
+    height: 8rem;
     /* background-color: #03041C; */
     background-image: linear-gradient(108deg, #1881c3, #33bde8);
 }
@@ -22,7 +22,7 @@ nav a:active {
 }
 
 .navbar__logo__img {
-    height: 4rem;
+    height: 10rem;
 }
 
 /***** HAMBURGER NAVIGATION *****/
