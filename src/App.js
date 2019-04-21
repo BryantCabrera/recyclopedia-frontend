@@ -129,7 +129,7 @@ class App extends Component {
             <div className="App">
                 <NavBar loggedUser={this.state.loggedUser} doLogoutUser={this.doLogoutUser}/>
                 <Switch>
-                    <Route exact path="/" component={() => <Landing />} />
+                    <Route exact path="/" component={() => <Landing loggedUser={this.state.loggedUser} />} />
                     <Route exact path="/login" component={(...props) => <Login doLogInUser={this.doLogInUser} />} />
                     <Route exact path="/register" component={() => <Register />} />
                     <Route exact path="/profile" component={() => <Profile />} />

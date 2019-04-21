@@ -13,7 +13,7 @@ class Landing extends Component {
                 <div className="landing__features">
                     <div className="landing__features--demo">
                         <h1>Demo</h1>
-                        <TrashScan />
+                        <TrashScan loggedUser={this.props.loggedUser}/>
                     </div>
                     <div className="landing__features--incentives">
                         <h1>Incentives</h1>
