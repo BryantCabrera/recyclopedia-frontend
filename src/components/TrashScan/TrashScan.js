@@ -131,8 +131,9 @@ class App extends Component {
         // let userID = this.props.loggedUser._id ? this.props.loggedUser._id : 0;
 
         let imageScanData = {
-            image: imageObj.imageData,
-            user: 0
+            "user_id": 100,
+            "image": imageObj.imageData
+            
         }
 
         console.log(JSON.stringify(imageScanData), ' this is imageScanData');
@@ -149,18 +150,20 @@ class App extends Component {
         //     })
 
         try {
-            const scanResponse = await fetch('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', {
+            const scanResponse = await fetch('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage', {
                 method: "POST",
-                mode: 'no-cors',
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(imageScanData)
+                // mode: 'no-cors',
+                // headers: {
+                //     "Content-Type": "application/json",
+                // },
+                body: imageScanData
             })
 
+            console.log(scanResponse, ' this is scanResponse from Nic & Alex')
             const parsedResponse = await scanResponse.json();
 
             console.log(parsedResponse, ' this is res from Nic & Alex');
+            
         } catch(err) {
             console.log(err);
         }
