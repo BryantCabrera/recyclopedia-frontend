@@ -3,6 +3,7 @@ import axios from 'axios';
 import FileBase from 'react-file-base64';
 import { storage } from '../../firebase-config';
 import DefaultImg from '../../assets/default-img.jpg';
+import './TrashScan.css'
 
 // base api url being used
 const API_URL = "http://localhost:4000";
