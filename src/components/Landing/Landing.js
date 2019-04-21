@@ -20,7 +20,7 @@ class Landing extends Component {
             </div>
           {/* <img src={logo}></img> */}
         </div>
-          
+        <div class="top-panel"></div>
         </div>
         <div className="landing__features">
             <div className="landing__trashscan--panel">
@@ -30,14 +30,14 @@ class Landing extends Component {
                 </div>
             </div>
         </div>
-        <div className="landing_features-both">
+        {/* <div className="landing_features-both">
           <div className="landing__features--incentives">
             <h1>Incentives</h1>
           </div>
           <div className="landing__features--impact">
             <h1>Impact</h1>
           </div>
-        </div>
+        </div> */}
         <div className="landing__demo--description">
           <div className="landing__demo--panel">
             <div className="landing__demo--description--text">
