@@ -16,7 +16,7 @@ nav a:visited {
     padding: 0 1rem;
     text-decoration: none;
     font-size: 1.75rem;
-    color: #38B6FF;
+    color: white;
 }
 
 nav a:hover,
@@ -45,7 +45,7 @@ nav a:active {
 /*************************/
 @media (max-width: 48em) {
     .navbar {
-        position: relative;
+        /* position: relative; */
         height: 6rem;
         background-color: transparent;
     }
