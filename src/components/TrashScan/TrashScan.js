@@ -123,11 +123,11 @@ class App extends Component {
             this.setDefaultImage("base");
         });
 
-        let userID = this.props.loggedUser._id ? this.props.loggedUser._id : 0;
+        // let userID = this.props.loggedUser._id ? this.props.loggedUser._id : 0;
 
         let imageScanData = {
             image: imageObj.imageData,
-            user: userID
+            user: 0
         }
 
         console.log(JSON.stringify(imageScanData), ' this is imageScanData');
