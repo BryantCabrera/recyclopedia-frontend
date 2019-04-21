@@ -7,9 +7,9 @@ class NavBar extends Component {
         return (
             <div className="navbar">
                 <div className="navbar__logo">
-                    <a href="#top">
+                    <NavLink exact to="/" title="Landing Page">
                         <img className="navbar__logo__img" src="/imgs/logo.png" alt="Recyclopedia Logo" title="Recyclopedia Logo"></img>
-                    </a>
+                    </NavLink>
                 </div>
                 <nav className="navbar__nav--linear">
                     <a href="#about" title="About Page">About</a>
