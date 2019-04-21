@@ -7,6 +7,7 @@ import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
 import Landing from './components/Landing/Landing'
 import Profile from './components/Profile/Profile'
+import NavBar from './components/NavBar/NavBar'
 
 class App extends Component {
     state = {
@@ -126,6 +127,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <NavBar doLogoutUser={this.doLogoutUser}/>
                 <Switch>
                     <Route exact path="/" component={() => <Landing />} />
                     <Route exact path="/login" component={(...props) => <Login doLogInUser={this.doLogInUser} />} />
