@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Landing.css'
 import logo from '../../assets/main-logo.png'
+import TrashScan from '../TrashScan/TrashScan'
 
 class Landing extends Component {
     render(){
@@ -12,6 +13,7 @@ class Landing extends Component {
                 <div className="landing__features">
                     <div className="landing__features--demo">
                         <h1>Demo</h1>
+                        <TrashScan />
                     </div>
                     <div className="landing__features--incentives">
                         <h1>Incentives</h1>
