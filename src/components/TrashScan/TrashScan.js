@@ -129,7 +129,7 @@ class App extends Component {
                 <h3 className="main-heading">Image Upload App</h3>
 
                 <div className="image-container">
-                <div className="process">
+                {/* <div className="process">
                     <h4 className="process__heading">Process: Using Multer</h4>
                     <p className="process__details">Upload image to a node server, connected to a MongoDB database, with the help of multer</p>
 
@@ -143,7 +143,7 @@ class App extends Component {
 
                     <input type="file" className="process__upload-btn" onChange={(e) => this.uploadImage(e, "firebase")} />
                     <img src={this.state.firebaseImage} alt="upload-image" className="process__image" />
-                </div>
+                </div> */}
 
                 <div className="process">
                     <h4 className="process__heading">Process: Using Base64</h4>
