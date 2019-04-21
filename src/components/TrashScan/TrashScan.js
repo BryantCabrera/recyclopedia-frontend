@@ -101,7 +101,7 @@ class App extends Component {
     }
 
     // function to capture base64 format of an image
-    getBaseFile(files) {
+    getBaseFile = async (files)  => {
         // create a local readable base64 instance of an image
         this.setState({
             baseImage: files.base64
@@ -132,17 +132,34 @@ class App extends Component {
         }
 
         console.log(JSON.stringify(imageScanData), ' this is imageScanData');
-        axios.post('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', JSON.stringify(imageScanData), {
+        // axios.post('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', JSON.stringify(imageScanData), {
+        //         headers: {
+        //             "Content-Type": "application/json"
+        //         }
+        //     })
+        //     .then(res => {
+        //         console.log(res, ' this is res from Nic & Alex');
+        //     })
+        //     .catch(err => {
+        //         console.log(err);
+        //     })
+
+        try {
+            const scanResponse = await fetch('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', {
+                method: "POST",
+                mode: 'no-cors',
                 headers: {
-                    "Content-Type": "application/json"
-                }
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(imageScanData)
             })
-            .then(res => {
-                console.log(res, ' this is res from Nic & Alex');
-            })
-            .catch(err => {
-                console.log(err);
-            })
+
+            const parsedResponse = await scanResponse.json();
+
+            console.log(parsedResponse, ' this is res from Nic & Alex');
+        } catch(err) {
+            console.log(err);
+        }
     }
 
     render() {
