@@ -9,7 +9,7 @@ class Landing extends Component {
       <div className="landing__maincontainer">
         <div className="landing__div">
           <div className="landing__header">
-            <h1>Recylopedia</h1>
+            <h1>Recyclopedia</h1>
             <div className="landing__header--content">
               <p>Empowering communities to drive local
             <br></br><br></br>
