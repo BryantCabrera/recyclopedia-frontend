@@ -6,7 +6,8 @@ import DefaultImg from '../../assets/default-img.jpg';
 import './TrashScan.css'
 
 // base api url being used
-const API_URL = "http://localhost:4000";
+// const API_URL = "http://localhost:4000";
+const API_URL = `${process.env.REACT_APP_API_URL}`;
 
 class App extends Component {
     state = {
