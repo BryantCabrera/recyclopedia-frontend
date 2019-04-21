@@ -3,7 +3,8 @@
     justify-content: space-between;
     align-items: center;
     height: 4rem;
-    background-color: #03041C;
+    /* background-color: #03041C; */
+    background-image: linear-gradient(108deg, #1881c3, #33bde8);
 }
 
 /***** LINEAR NAVIGATION *****/
