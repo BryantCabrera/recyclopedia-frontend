@@ -1,0 +1,135 @@
+.landing__maincontainer {
+    background-image: linear-gradient(to bottom, white 25%, #C9EBFF 50%, #B0E2FF 75%, #38B6FF 100%)
+}
+
+.landing__header {
+    padding: 9em 0;
+    color: hsla(0,0%,100%,.75);
+    background-attachment: fixed,fixed,fixed;
+    background-position: 0 0,50%,50%;
+    background-size: auto,cover,cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.landing__header img {
+    height: 60%;
+}
+
+.landing__features {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+.landing__features--demo {
+    width: 33.3%;
+    background-image: url('../../assets/winter.jpg');
+}
+
+.landing__features--incentives {
+    width: 33.3%;
+    background-image: url('../../assets/spring.jpg');
+}
+
+.landing__features--impact {
+    width: 33.3%;
+    background-image: url('../../assets/summer.jpg');
+}
+
+.landing__demo--description {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing__demo--panel {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 80%;
+    width: 70%;
+}
+
+.landing__demo--description--text {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: none;
+    border: solid 1px #C4B86C;
+    height: 80%;
+    width: 90%;
+}
+
+.landing__incentives--description {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing__incentives--panel {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 80%;
+    width: 70%;
+}
+
+.landing__incentives--description--text {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: none;
+    border: solid 1px #C4B86C;
+    height: 80%;
+    width: 90%;
+}
+
+.landing__impact--description {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing__impact--panel {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.644);
+    height: 80%;
+    width: 70%;
+}
+
+.landing__impact--description--text {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: none;
+    border: solid 1px #C4B86C;
+    height: 80%;
+    width: 90%;
+}
