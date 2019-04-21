@@ -3,6 +3,7 @@ import axios from 'axios';
 import FileBase from 'react-file-base64';
 import { storage } from '../../firebase-config';
 import DefaultImg from '../../assets/default-img.jpg';
+import './TrashScan.css'
 
 // base api url being used
 const API_URL = "http://localhost:4000";
@@ -121,6 +122,22 @@ class App extends Component {
             alert("Error while uploading image using base64 format")
             this.setDefaultImage("base");
         });
+
+        let userID = this.props.loggedUser._id ? this.props.loggedUser._id : 0;
+
+        let imageScanData = {
+            image: imageObj.imageData,
+            user: userID
+        }
+
+        console.log(JSON.stringify(imageScanData), ' this is imageScanData');
+        axios.post('https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage/', JSON.stringify(imageScanData))
+            .then(res => {
+                console.log(res, ' this is res from Nic & Alex');
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 
     render() {
