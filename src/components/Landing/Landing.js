@@ -23,10 +23,12 @@ class Landing extends Component {
 
         </div>
         <div className="landing__features">
-          <div className="landing__features--demo">
-            <h1>Demo</h1>
-            <TrashScan />
-          </div>
+            <div className="landing__trashscan--panel">
+                <div className="landing__features--demo">
+                    <h1>Demo</h1>
+                    <TrashScan />
+                </div>
+            </div>
         </div>
         <div className="landing_features-both">
           <div className="landing__features--incentives">
@@ -40,22 +42,6 @@ class Landing extends Component {
           <div className="landing__demo--panel">
             <div className="landing__demo--description--text">
               <h2>Demo Description</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id tenetur beatae dolores corporis eaque.</p>
-            </div>
-          </div>
-        </div>
-        <div className="landing__incentives--description">
-          <div className="landing__incentives--panel">
-            <div className="landing__incentives--description--text">
-              <h2>Incentives</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id tenetur beatae dolores corporis eaque.</p>
-            </div>
-          </div>
-        </div>
-        <div className="landing__impact--description">
-          <div className="landing__impact--panel">
-            <div className="landing__impact--description--text">
-              <h2>Impact</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt id tenetur beatae dolores corporis eaque.</p>
             </div>
           </div>
