@@ -127,7 +127,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <NavBar doLogoutUser={this.doLogoutUser}/>
+                <NavBar loggedUser={this.state.loggedUser} doLogoutUser={this.doLogoutUser}/>
                 <Switch>
                     <Route exact path="/" component={() => <Landing />} />
                     <Route exact path="/login" component={(...props) => <Login doLogInUser={this.doLogInUser} />} />
