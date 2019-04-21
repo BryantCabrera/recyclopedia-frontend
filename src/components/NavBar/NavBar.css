@@ -1,8 +1,11 @@
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
+    height: 7rem;
+    width: 100vw;
+    z-index: 10;
     /* background-color: #03041C; */
     background-image: linear-gradient(108deg, #1881c3, #33bde8);
 }
@@ -12,7 +15,7 @@ nav a:link,
 nav a:visited {
     padding: 0 1rem;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     color: #fff;
 }
 
@@ -22,7 +25,14 @@ nav a:active {
 }
 
 .navbar__logo__img {
-    height: 10rem;
+    height: 5rem;
+    margin-left: 10%;
+}
+
+.navbar__nav--linear {
+    text-transform: uppercase;
+    margin-right: 2%;
+    font-family: 'Poppins', sans-serif;
 }
 
 /***** HAMBURGER NAVIGATION *****/
@@ -35,6 +45,7 @@ nav a:active {
 /*************************/
 @media (max-width: 48em) {
     .navbar {
+        position: relative;
         height: 6rem;
         background-color: transparent;
     }
