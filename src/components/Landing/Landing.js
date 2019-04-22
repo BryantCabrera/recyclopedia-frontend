@@ -14,13 +14,14 @@ class Landing extends Component {
               <p>Empowering communities to drive local
             <br></br><br></br>
                 environmental change with lasting global impact</p>
-              <button className="landing__button-getstarted">
+              <a href="#features" alt="features" title="demo"><button className="landing__button-getstarted">
                 Get Started
             </button>
+            </a>
             </div>
             {/* <img src={logo}></img> */}
           </div>
-          <div class="top-panel"></div>
+          <div className="top-panel"></div>
         </div>
         <div className="landing__demo--video">
           <div className="landing__features">
