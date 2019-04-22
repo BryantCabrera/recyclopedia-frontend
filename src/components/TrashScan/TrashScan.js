@@ -171,7 +171,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="main-container">
+            <div className="main-container" id="features">
                 <h3 className="main-heading">Image Upload App</h3>
 
                 <div className="image-container">
