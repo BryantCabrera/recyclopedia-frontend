@@ -44,7 +44,7 @@ class NavBar extends Component {
                 <nav className="navbar__nav--hamburger" style={{display: this.state.navHamburgerDisplay}}>
                     <input type="checkbox" className="hamburger__checkbox" id="hamburger-toggle"></input>
         
-                    <label for="hamburger-toggle" className="hamburger__button">
+                    <label htmlFor="hamburger-toggle" className="hamburger__button">
                         <span className="hamburger__icon">&nbsp;</span>
                     </label>
 
