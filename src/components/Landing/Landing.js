@@ -32,7 +32,6 @@ class Landing extends Component {
               </div>
             </div>
             <div className="landing__video">
-
             {/* <video id="bgvid" style={{ width: '100%' }}
                 src="https://www.youtube.com/embed/iTEsuURdDck"
                 loop
