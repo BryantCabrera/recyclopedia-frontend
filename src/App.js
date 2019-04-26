@@ -8,6 +8,7 @@ import Register from './components/Auth/Register'
 import Landing from './components/Landing/Landing'
 import Profile from './components/Profile/Profile'
 import NavBar from './components/NavBar/NavBar'
+import AboutMain from './components/AboutMain/AboutMain'
 
 class App extends Component {
     state = {
@@ -133,6 +134,7 @@ class App extends Component {
                     <Route exact path="/login" component={(...props) => <Login doLogInUser={this.doLogInUser} />} />
                     <Route exact path="/register" component={() => <Register />} />
                     <Route exact path="/profile" component={() => <Profile />} />
+                    <Route exact path='/about' component={() => <AboutMain /> } />
                 </Switch>
             </div>
         );
