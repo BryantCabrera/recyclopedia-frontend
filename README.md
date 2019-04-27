@@ -9,7 +9,6 @@ Recyclopedia is a full stack app built in 2 days by
 5. Alex Binaei -
 6. Teni Asewumi - Chief Research Officer
 7. Colton Orr - Chief Business Officer
-8. Patrick Carroll - React Native Engineer
 
 ## B. User Stories
 
