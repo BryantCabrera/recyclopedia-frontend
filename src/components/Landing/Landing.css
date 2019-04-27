@@ -118,6 +118,15 @@
     max-height: 70vh;
 } */
 
+.landing__quote {
+    height: 50vh;
+    background-color: red;
+}
+
+.landing__quote img {
+    height: 100%;
+}
+
 
 
 

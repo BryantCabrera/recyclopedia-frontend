@@ -5,6 +5,7 @@ import TrashScan from '../TrashScan/TrashScan'
 import About from '../Landing/About/About'
 import Mission from './Mission/Mission';
 import HowYouCanHelp from './HowYouCanHelp/HowYouCanHelp';
+import quoteplaceholder from '../../assets/quote-placeholder.jpeg';
 
 class Landing extends Component {
     render() {
@@ -24,6 +25,9 @@ class Landing extends Component {
                         </div>
                     </div>
                     <div className="top-panel"></div>
+                </div>
+                <div className="landing__quote">
+                  <img src={quoteplaceholder}></img>
                 </div>
                 <div>
                     <About/>
